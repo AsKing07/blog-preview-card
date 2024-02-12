@@ -1,0 +1,150 @@
+
+:root {
+    /* primary */
+    --Yellow: hsl(47, 88%, 63%);
+  
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+  }
+
+@font-face {
+    font-family: "FigTreeExtraBold";
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "FigTreeSemiBold";
+    src: url("./assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  }
+
+body
+{
+    background-color: var(--Yellow);
+
+}
+
+h1
+{
+    color: var(--Black);
+    font-size: 1.2rem;
+    font-family: "FigTreeExtraBold", sans-serif;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: var(--Yellow);
+}
+
+
+p
+{
+    font-size: 16px;
+
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card
+{
+    margin: 0 auto;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid black 2px;
+    box-shadow: 8px 8px 0px 0px var(--Black);
+}
+
+button
+{
+    background-color: var(--Yellow);
+    color: var(--Black);
+    border-radius: 5px;
+    border: none;
+
+    display: block;
+
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: "FigTreeExtraBold", sans-serif;
+    cursor: pointer;
+    
+    margin-bottom: 1rem;
+    transition: background-color 0.4s ease-in-out, color 0.5s ease-in-out; 
+}
+
+button:hover
+{
+    background-color: var(--Black);
+    color: var(--White);
+}
+
+.image
+{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.text
+{
+    margin-left: 7px;
+
+}
+
+.date
+{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.author
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.author img
+{
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    height: 40px;
+    width: 40px; 
+
+
+    
+}
+
+ .desc
+{
+   
+    color: var(--Grey);
+    font-family: "FigTreeSemiBold", sans-serif;
+} 
+
+span{
+    color: var(--Black);
+    font-family: "FigTreeExtraBold", sans-serif;
+}
+
+footer
+{
+    margin-top: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
